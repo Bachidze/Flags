@@ -1,0 +1,16 @@
+body{
+  background: rgb(220, 219, 219);
+
+}
+.App{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  margin-top: 232px;
+  gap: 98px;
+}
+
+span{
+  font-weight: bold;
+}
+
