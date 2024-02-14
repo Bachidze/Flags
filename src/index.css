@@ -1,10 +1,10 @@
 body{
   background: rgb(220, 219, 219);
-
+  transition: 1s;
 }
 .App{
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto;
   justify-content: center;
   margin-top: 232px;
   gap: 98px;
@@ -13,4 +13,31 @@ body{
 span{
   font-weight: bold;
 }
+input{
+  border: none;
+  outline: none;
+  color: gray
+}
+
+
+@media (width>= 768px){
+  .App{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+}
+
+@media (width >= 1280px){
+  .App{
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (width >= 1440px){
+  .App{
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
 
