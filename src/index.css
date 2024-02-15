@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
   background: rgb(220, 219, 219);
   transition: 1s;
+  font-family: "Nunito Sans", sans-serif;
 }
 .App{
   display: grid;
@@ -23,21 +31,32 @@ input{
 @media (width>= 768px){
   .App{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2,auto);
     justify-content: center;
   }
 }
 
-@media (width >= 1280px){
+@media (width >= 1180px){
   .App{
-    grid-template-columns: auto auto auto;
+    grid-template-columns:repeat(3,auto);
   }
 }
 
 @media (width >= 1440px){
   .App{
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4,auto);
   }
 }
+@media (width >= 1800px){
+  .App{
+    grid-template-columns: repeat(5,auto);
+  }
+}
+@media (width >= 2400px){
+  .App{
+    grid-template-columns: repeat(6,auto);
+  }
+}
+
 
 

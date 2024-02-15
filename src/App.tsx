@@ -4,6 +4,7 @@ import axios, { AxiosResponse } from 'axios';
 import { Country } from '../Interfaces';
 import Major from './components/Major';
 import Filter from './components/Filter';
+import Header from './components/Header';
 
 function App(): JSX.Element {
   const [countries, setCountries] = useState<Country[]>([]);
@@ -52,6 +53,7 @@ function App(): JSX.Element {
 
   return (
     <>
+      <Header/>
       <Filter
       appear={appear}
       filterByRegion={filterByRegion}

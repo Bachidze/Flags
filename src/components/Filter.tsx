@@ -10,7 +10,7 @@ const Filter: React.FC<FilterProps> = ({
   return (
     <>
       <section className='flex flex-col  items-center md:flex-row justify-between'>
-        <div className='flex w-[348px] h-[48px] items-center pl-4 bg-white rounded-[5px] mt-[24px] mb-[40px] md:relative left-[73px]  '>
+        <div className='flex w-[348px] h-[48px] items-center pl-4 bg-white rounded-[5px] mt-[24px] mb-[40px] md:relative left-[73px] xl:w-[450px] xl:left-[75px]'>
           <img
             className='pe-4'
             src='/assets/search (1).svg'
@@ -26,8 +26,8 @@ const Filter: React.FC<FilterProps> = ({
           />
         </div>
         <div className='relative md:mb-2'>
-          <div className='w-[200px] h-[48px] bg-white flex items-center justify-between pl-4 pr-5 rounded-[5px] relative right-[73px] mb-3'>
-            <h2>Filter by Region</h2>
+          <div className='w-[200px] h-[48px] bg-white flex items-center justify-between pl-4 pr-5 rounded-[5px] relative right-[73px] mb-3 xl:rigght-[75px]'>
+            <h2 className="text-[12px] text-[#111517] font-bold">Filter by Region</h2>
             <img
               onClick={appear}
               className='w-3 cursor-pointer transform-[180deg]'
@@ -37,7 +37,7 @@ const Filter: React.FC<FilterProps> = ({
             />
           </div>
           {show && (
-            <div className='w-[200px] h-[144px] bg-white flex  justify-between pl-4 pr-5 rounded-[5px] absolute right-[73px] flex-col pt-2 pb-2 cursor-pointer'>
+            <div className='w-[200px] h-[144px] bg-white flex  justify-between pl-4 pr-5 rounded-[5px] absolute right-[73px] flex-col pt-2 pb-2 cursor-pointer text-[12px] text-[#111517] font-bold'>
               <h3 onClick={() => filterByRegion('Africa')}>Africa</h3>
               <h3 onClick={() => filterByRegion('America')}>America</h3>
               <h3 onClick={() => filterByRegion('Asia')}>Asia</h3>
