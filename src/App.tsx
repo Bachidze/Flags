@@ -11,6 +11,7 @@ function App(): JSX.Element {
   const [filteredCountries, setFilteredCountries] = useState<Country[]>([]);
   const [show, setShow] = useState(false);
   const [name, setName] = useState('');
+ 
 
   const handleFilter = (e: React.ChangeEvent<HTMLInputElement>) => {
     const inputValue = e.target.value.toLowerCase();
@@ -53,15 +54,19 @@ function App(): JSX.Element {
 
   return (
     <>
-      <Header/>
+    <div className='dark:bg-[#2B3844]'>
+      <Header
+      />
       <Filter
       appear={appear}
       filterByRegion={filterByRegion}
       handleFilter={handleFilter}
       name={name}
       show={show}
+      
       />
       <Major countries={filteredCountries} />
+      </div>
     </>
   );
 }
