@@ -39,7 +39,7 @@ const Filter: React.FC<FilterProps> = ({
           {show && (
             <div className='w-[200px] h-[144px] bg-white flex  justify-between pl-4 pr-5 rounded-[5px] absolute right-[73px] flex-col pt-2 pb-2 cursor-pointer text-[12px] text-[#111517] font-bold dark:text-[white] dark:bg-[#2B3844] '>
               <h3 onClick={() => filterByRegion('Africa')}>Africa</h3>
-              <h3 onClick={() => filterByRegion('America')}>America</h3>
+              <h3 onClick={() => filterByRegion('Americas')}>America</h3>
               <h3 onClick={() => filterByRegion('Asia')}>Asia</h3>
               <h3 onClick={() => filterByRegion('Europe')}>Europe</h3>
               <h3 onClick={() => filterByRegion('Oceania')}>Oceania</h3>
