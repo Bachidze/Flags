@@ -2,7 +2,7 @@ import { Country } from "../../Interfaces";
 
 const Major = ({ countries }: any) => {
   return (
-    <section className="mt-[-150px] mb-[150px]">
+    <section className="mt-[-150px] ">
       <div className='App'>
         {countries.map((country: Country, index: number) => (
           <div className='w-[267px] bg-white h-[356px] rounded-[10px] flex flex-col dark:bg-[#2B3844] dark:shadow-2xl' key={index}>
